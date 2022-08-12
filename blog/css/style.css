@@ -1,0 +1,241 @@
+/* TO GET AN IDEA OF THE CSS YOU WILL LIKELY BE USING, SEE THE LISTS BELOW. */
+
+        /* 
+        
+        Spacing 
+
+            - padding (shorthand and/or specific properties like padding-bottom, etc.)
+
+            - margin, (shorthand and/or specific properties like margin-top, etc.)
+
+            - letter-spacing, word-spacing, line-height
+
+            - width, max-width, min-width
+            - height, max-height, min-height
+
+        Typography 
+
+            - font-family, font-size, font-style, font-weight
+
+            - text-decoration, text-align
+
+            - color
+
+            - text-shadow, text-transform
+
+        Box, Layout and Border 
+
+            - border (shorthand and/or specific properties like border-top, border-bottom-radius, border-width, etc.)
+
+            - box-shadow
+
+            - display, float, align-items, align-content
+
+            - grid-template-columns, grid-column-gap
+
+            - transform
+
+        Other
+
+            - :nth()-child (to target specific child elements)
+
+            - :focus, :hover, :active (to target link states)
+
+            - @font-face or @import (to import typefaces)
+
+        */
+
+
+/* ------ START WRITING YOUR CODE BELOW ------ */
+@font-face {
+    font-family: montserrat;
+    src: url(../fonts/sans-serif/opensans-regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: josefinslab;
+    src: url(../fonts/sans-serif/lato-regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: bubble;
+    src: url(../fonts/serif/ultra-regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: header;
+    src: url(../fonts/sans-serif/lato-regular.ttf) format('truetype');
+}
+
+h1 {
+    font-family: header;
+    font-size: 3rem;
+    -webkit-text-stroke: 2px;
+    letter-spacing: 2px;
+}
+
+
+.charcoal {
+    font-family: bubble;
+    font-size: 3rem;
+    background: #83344D;
+    color: white;
+    padding: 1%;
+    border-radius: 13px;
+}
+
+button {
+    font-family: bubble;
+    font-size: 2rem;
+    background: #27476E;
+    color: white;
+    padding: 2%;
+    border-radius: 13px;
+    border: none;
+    height: 80px;
+}
+
+.button-container {
+    
+display: flex;
+    
+height: 200px;
+    
+align-items: center;
+}
+
+/* Typography Styles */
+html {
+    font-family: montserrat, Arial, sans-serif;
+}
+
+h2, h3 {
+    font-family: josefinslab, Arial, serif;
+}
+
+body {
+    margin: 0;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 2rem;
+    gap: 6rem;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    height: 4rem;
+}
+
+.nav-container div:first-child {
+    padding-left: 5rem;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 10rem;
+    align-items: center;
+    transform: rotate(-5deg);
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.subsection {
+    display: flex;
+    flex-direction: row;
+}
+
+.subsection figure {
+    width: 33%;
+    margin: 0.5%;
+}
+
+article {
+    width: 74%;
+    padding-right: 1%;
+    border-right: 1px solid;
+}
+
+aside {
+    width: 23%;
+    padding-left: 1%;
+}
+
+img {
+    width: 100%;
+}
+
+aside h3:not(:first-child) {
+    border-top: 2px solid;
+    padding-top: 6%;
+}
+
+figure {
+    margin-left: 0;
+    margin-right: 2%;
+}
+
+.article-image {
+    width: 427px;
+    float: left;
+}
+
+.expand {
+    text-decoration: none;
+    font-size: 0.5rem;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    align-items: flex-end;
+}
+
+aside img {
+    width: 100%;
+}
+
+figcaption {
+    background: palegoldenrod;
+    padding: 0.5rem;
+}
+
+h2 {
+    margin-bottom: 0;
+    margin-top: 3rem;
+}
+
+.blog {
+    text-decoration: line-through;
+    transform: rotate(5deg);
+    font-size: 1.5rem;
+}
+
+.nav-item {
+    color: darkblue;
+}
+
+.license {
+    display: flex;
+    flex-wrap: wrap;
+    width: 450px;
+}
